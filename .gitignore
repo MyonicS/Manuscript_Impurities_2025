@@ -162,3 +162,5 @@ cython_debug/
 
 # Generated Figures
 Figures/
+Figures_SI/
+Data/

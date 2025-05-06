@@ -1,15 +1,17 @@
 001,Pristine Polymer
 002,Na$^{\!+}$ \n0.06 mmol/g
 003,$\mathrm{Ca}^{2\!\!+}$\n0.06 mmol/g
-004,K$^{\!+}$ \n0.06 mmol/g
+004,K$^{\!+}$\n0.06 mmol/g
 005,TiO$_2$ \n0.06 mmol/g
 006,$\mathrm{Mg}^{2\!\!+}$\n0.06 mmol/g
 007,SiO$_2$ \n0.06 mmol/g
 008,(NH$_4$)$_2$SO$_4$\n0.06 mmol/g
 009,NH$_4$Cl \n0.06 mmol/g
-010,Phthalocyanine \nGreen
+010,Phthalocyanine\nGreen
 011,$\mathrm{Cu}^{2\!\!+}$\n0.06 mmol/g
-023,Post consumer \nplastic
-024,Post consumer \nplastic
+023,PCPW
+024,PCPW
+025,Pristine PP\nafter 3xPCPW
+026,Pristine PP\nafter 10xPCPW
 031,$\mathrm{Ca}^{2\!\!+}$\n0.3 mmol/g
 032,TiO$_2$ \n0.16 mmol/g
