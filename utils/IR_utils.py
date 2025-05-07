@@ -4,6 +4,7 @@ import pytz
 import numpy as np
 import xarray as xr
 import os
+import platform
 from scipy.optimize import curve_fit
 from matplotlib import pyplot as plt
 
@@ -277,10 +278,20 @@ def linear_baseline(data, start, end):
 
 def set_plot_defaults():
     plt.rcParams.update(plt.rcParamsDefault)
-    font = {'family' : 'sans-serif',
-            'sans-serif' : ['Arial'],
-            'weight' : 'normal',
-            'size'   : 7}
+    
+    system = platform.system()
+    
+    if system == 'Windows':
+        font_family = 'Arial'
+    elif system == 'Linux':
+        font_family = 'Liberation Sans'
+    else:
+        font_family = 'sans-serif'  # Fallback
+    
+    font = {'family': 'sans-serif',
+            'sans-serif': [font_family],
+            'weight': 'normal',
+            'size': 7}
 
     plt.rc('font', **font)
     plt.rcParams['figure.figsize'] = [3.3,3.3/1.618]  # Width, height in inches

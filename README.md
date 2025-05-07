@@ -7,7 +7,7 @@ The raw data is hosted on the Open Science Foundation repository under DOI: http
 ## In Google Colab
 The easiest way to run the notebook is in Google Colab.
 Click the link below and run the notebook.
-<a href="https://colab.research.google.com/github/MyonicS/Manuscript_Impurities_2025/blob/main/Manuscript_Impurities_2025.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+<a href="https://colab.research.google.com/github/MyonicS/Manuscript_Impurities_2025/blob/main/Impurities_notebook.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 At release the notebook is running python 3.10. 
 Cells at the top of the notebook clone the repository, install packages and download the experimental data to the Colab runtime. Note that these steps can take a couple minutes.  
 

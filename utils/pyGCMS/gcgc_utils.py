@@ -79,9 +79,9 @@ import tifffile
 def normalize_array(df_array):
     arrray_for_integral = np.array(df_array)
     #integrate over rows
-    row_integrated_pre = integrate.trapz(arrray_for_integral, axis=0)
+    row_integrated_pre = integrate.trapezoid(arrray_for_integral, axis=0)
     #integrating the new array
-    integral_non_norm = integrate.trapz(row_integrated_pre, axis=0)
+    integral_non_norm = integrate.trapezoid(row_integrated_pre, axis=0)
     df_array_norm = df_array/integral_non_norm
     return df_array_norm
     
@@ -91,9 +91,9 @@ def integrate_masked(df_norm_array, maskpath):
 
     array_norm_mask_diarom = np.array(df_norm_array_masked)
     #integrate over rows
-    row_integrated = integrate.trapz(array_norm_mask_diarom, axis=0)
+    row_integrated = integrate.trapezoid(array_norm_mask_diarom, axis=0)
     #integrating the new array
-    column_integrated = integrate.trapz(row_integrated, axis=0)
+    column_integrated = integrate.trapezoid(row_integrated, axis=0)
     return column_integrated
     
 
