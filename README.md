@@ -15,7 +15,7 @@ Cells at the top of the notebook clone the repository, install packages and down
 The notebook is optimized to run in Google Colab. When running the notebook locally delete or comment out all code cells before importing of modules. 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/MyonicS/External_Acidity_Paper
+   git clone https://github.com/MyonicS/Manuscript_Impurities_2025
    ```
 2. (optional but recommended: Create a new python 3.10 environment)
 3. Install the remaining requirements by navigating to the repository and running.
