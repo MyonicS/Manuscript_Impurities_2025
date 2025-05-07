@@ -107,7 +107,7 @@
       <rect x="39.37058" y="210.55392" width="184.14" height="182.95199" fill="none"/>
     </clipPath>
   </defs>
-  <rect x="281.46945" y="2.08059" width="193.48424" height="21.66967" fill="#e0e0e0"/>
+  <rect x="281.46945" y="2.08059" width="193.48424" height="21.66967" fill="#ffffff"/>
   <path d="M252.37366,427.21683h237.60001V-13.32705h-237.60001v440.54388Z" fill="none"/>
   <path d="M300.81166,245.88319h175.797v-101.83659h-175.797v101.83659Z" fill="none"/>
   <path id="uuid-b2d2a6e3-4f7f-4f4e-b0a8-12988081d16b" data-name="mac1517a4f1" d="M300.81166,245.88319v3.5" stroke="#000" stroke-linejoin="round" stroke-width=".8"/>
