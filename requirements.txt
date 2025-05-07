@@ -1,0 +1,10 @@
+numpy
+matplotlib
+pandas
+scipy
+chardet
+seaborn
+xarray
+pyGAPS
+spectrochempy_omnic
+datahugger
