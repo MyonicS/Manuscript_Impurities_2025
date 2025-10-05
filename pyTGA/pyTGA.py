@@ -108,12 +108,12 @@ class TGA_pyro(TGA_exp):
 
     """
 
-    def __init__(self, stage_files=None):
+    def __init__(self, stage_files=None, cracking_stage_name='stage4', burnoff_stage_name='stage8'):
         super().__init__(stage_files)
         self.Tmax = None
         self.T50 = None
-        self.cracking_stage_name = 'stage4'
-        self.burnoff_stage_name = 'stage8'
+        self.cracking_stage_name = cracking_stage_name
+        self.burnoff_stage_name = burnoff_stage_name
 
     def cracking(self):
         """
@@ -278,7 +278,7 @@ def parse_TGA(filepath, manufacturer='infer', **kwargs):
     else:
         raise ValueError("manufacturer must be 'Perkin Elmer' or 'Mettler Toledo'")
 
-def parse_txt(filepath,exp_type = 'general',calculate_DTGA = False): # exp_type can be 'general' or 'pyro'
+def parse_txt(filepath,exp_type = 'general',calculate_DTGA = False,**kwargs): # exp_type can be 'general' or 'pyro'
     '''
     Parses a perkin Elmer ASCII TGA file and returns a TGA_exp object
 
@@ -290,6 +290,8 @@ def parse_txt(filepath,exp_type = 'general',calculate_DTGA = False): # exp_type 
         The type of TGA experiment. Must be 'general', 'pyro' or 'pyro_iso'. Default is 'general'
     calculate_DTGA : bool
         Whether to calculate the derivative of the TGA curve. Default is False
+    **kwargs
+        Additional keyword arguments for TGA_pyro (e.g., cracking_stage_name, burnoff_stage_name)
 
     Returns
     -------
@@ -299,7 +301,7 @@ def parse_txt(filepath,exp_type = 'general',calculate_DTGA = False): # exp_type 
     if exp_type == 'general':
         tga_exp_instance = TGA_exp()  # Create an instance of TGA_exp
     elif exp_type == 'pyro':
-        tga_exp_instance = TGA_pyro()
+        tga_exp_instance = TGA_pyro(**kwargs)
     elif exp_type == 'pyro_iso':
         tga_exp_instance = TGA_pyro_iso()
     else:
@@ -396,7 +398,7 @@ parse_PE = parse_txt
 #     return tga_exp
 
 #Functions----------------------------------------------------------------------------------------------------------------
-def parse_MT(filepath,exp_type = 'general', rename_columns=True, stage_split= None, calculate_DTGA = False):
+def parse_MT(filepath,exp_type = 'general', rename_columns=True, stage_split= None, calculate_DTGA = False, **kwargs):
     '''
     Parses a Mettler Toldeo TGA file and returns a TGA_exp object
 
@@ -419,6 +421,8 @@ def parse_MT(filepath,exp_type = 'general', rename_columns=True, stage_split= No
         If a dictionary, it should be a dictionary with stage names as keys and indices as values.
     calculate_DTGA : bool
         Whether to calculate the derivative of the TGA curve. Default is False
+    **kwargs
+        Additional keyword arguments for TGA_pyro (e.g., cracking_stage_name, burnoff_stage_name)
 
     Returns
     -------
@@ -433,7 +437,7 @@ def parse_MT(filepath,exp_type = 'general', rename_columns=True, stage_split= No
     if exp_type == 'general':
         tga_exp_instance = TGA_exp()  # Create an instance of TGA_exp
     elif exp_type == 'pyro':
-        tga_exp_instance = TGA_pyro()
+        tga_exp_instance = TGA_pyro(**kwargs)
     elif exp_type == 'pyro_iso':
         tga_exp_instance = TGA_pyro_iso()
     else:
