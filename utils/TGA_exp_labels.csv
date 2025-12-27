@@ -7,7 +7,7 @@
 007,SiO$_2$ \n0.06 mmol/g
 008,(NH$_4$)$_2$SO$_4$\n0.06 mmol/g
 009,NH$_4$Cl \n0.06 mmol/g
-010,Phthalocyanine\nGreen
+010,Phthalocyanine\nGreen \n0.06 mmol/g
 011,$\mathrm{Cu}^{2\!\!+}$\n0.06 mmol/g
 023,PCPW
 024,PCPW
@@ -16,3 +16,8 @@
 030,Pristine PP\n(repeat)
 031,$\mathrm{Ca}^{2\!\!+}$\n0.3 mmol/g
 032,TiO$_2$ \n0.16 mmol/g
+0160, $\mathrm{Ca}^{2\!\!+}$0.03 mmol/g + \n (NH$_4$)$_2$SO$_4$ 0.03 mmol/g
+0161, $\mathrm{Ca}^{2\!\!+}$ 0.03 mmol/g + \n Na$^{\!+}$ 0.03 mmol/g
+0157, $\mathrm{Ca}^{2\!\!+}$ 0.03 mmol/g + \n Cl$^{\!-}$ 0.03 mmol/g
+0158, $\mathrm{Cu}^{2\!\!+}$ 0.03 mmol/g + \n Cl$^{\!-}$ 0.03 mmol/g
+0149, \mathrm{Cu}^{2\!\!+}$ 0.03 mmol/g + \n NH$_4$Cl 0.03 mmol/g

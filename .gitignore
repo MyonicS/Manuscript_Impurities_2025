@@ -164,3 +164,6 @@ cython_debug/
 Figures/*
 Figures_SI/*
 Data/
+Figures_not_included/
+unused_notebooks/
+.vscode/
