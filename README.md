@@ -22,6 +22,10 @@ The notebook is optimized to run in Google Colab. When running the notebook loca
    ```sh
    pip install -r requirements.txt
    ```
+   alternatively, you can reproduce the exact environement using uv
+   ```sh
+   uv sync
+   ```
 4. Download the experimental data from the OSF repository.
    You can do this manually by downloading the ZIP file from [here](https://doi.org/10.17605/OSF.IO/5WTZY) and unzipping the folder into the repository, or by using the [datahugger](https://github.com/J535D165/datahugger) library
 5. Run the notebook in your IDE of choice. We recommend VS code as it allows for interactive plots in-line, which can be enabled using 
