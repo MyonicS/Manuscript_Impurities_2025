@@ -5,8 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "chromstream>=0.0.2",
+    "datahugger>=0.13",
+    "ipykernel>=7.1.0",
     "matplotlib>=3.10.7",
     "numpy>=2.3.3",
     "pandas>=2.3.3",
+    "pygaps>=4.6.1",
+    "pytga>=0.1.1",
     "seaborn>=0.13.2",
+    "spectrochempy-omnic>=0.2.1",
+    "tifffile>=2025.12.20",
+    "xarray>=2025.12.0",
 ]
