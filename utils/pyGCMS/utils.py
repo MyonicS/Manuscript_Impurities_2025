@@ -1,3 +1,4 @@
+import re
 import pandas as pd
 import numpy as np
 from scipy import integrate
@@ -80,7 +81,8 @@ def get_TCD_flows(filepath, compound_frame_TCD):
     inj_time = float(meta_frame['value']['Time sampling loop: [min]']) # time of recording of 1 injection in min
 
     filelist_TCD = glob.glob(filepath+'*TCD.txt*')
-    filelist_TCD.sort(key=len)
+    filelist_TCD = sorted(filelist_TCD,key=lambda p: int(re.search(r'/(\d+)_TCD.txt$', p).group(1)))
+
     integral_list = []
 
     for i in enumerate(filelist_TCD):
