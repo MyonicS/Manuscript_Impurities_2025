@@ -1,5 +1,5 @@
 # Description
-This repository hosts the companion jupyter notebook for the publication *The Effect of Impurities in Post-Consumer Plastic Waste on the Cracking of Polyolefins with Zeolite-based Catalysts* (https://doi.org/To-be-added)
+This repository hosts the companion jupyter notebook for the publication *The Effect of Inorganic Impurities in Post-Consumer Plastic Waste on the Cracking of Polyolefins with Zeolite-based Catalysts* (https://doi.org/10.26434/chemrxiv-2025-0nfrn/v2)
 It provides an executable version of the manuscript generating all figures and analyses from raw experimental data.
 The raw data is hosted on the Open Science Foundation repository under DOI: https://doi.org/10.17605/OSF.IO/5WTZY
 
